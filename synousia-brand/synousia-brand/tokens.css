@@ -1,0 +1,74 @@
+/* Synousia — token warna, jarak, sudut, dan font */
+:root, [data-theme="light"] {
+  --surface: #F3F4EF;
+  --surface-raised: #FFFFFF;
+  --line: #DAD9D0;
+  --ink: #2A2138;
+  --ink-muted: #5E566B;
+  --percik: #F2A93B;
+  --on-percik: #2A2138;
+  --percik-ink: #8A4F06;
+  --daun: #2F6F5E;
+  --on-daun: #FFFFFF;
+  --daun-soft: #DCEBE4;
+  --senja: #F2D6CB;
+  --shadow-angkat: 0 8px 24px rgba(42,33,56,0.12);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --surface: #1C1726;
+    --surface-raised: #262033;
+    --line: #3A3249;
+    --ink: #F1ECE4;
+    --ink-muted: #B9B0C6;
+    --percik: #F5B24A;
+    --on-percik: #2A2138;
+    --percik-ink: #F5B24A;
+    --daun: #7CC3AE;
+    --on-daun: #1C1726;
+    --daun-soft: #1F3A33;
+    --senja: #4A2E36;
+    --shadow-angkat: 0 8px 24px rgba(0,0,0,0.45);
+  }
+}
+[data-theme="dark"] {
+  --surface: #1C1726;
+  --surface-raised: #262033;
+  --line: #3A3249;
+  --ink: #F1ECE4;
+  --ink-muted: #B9B0C6;
+  --percik: #F5B24A;
+  --on-percik: #2A2138;
+  --percik-ink: #F5B24A;
+  --daun: #7CC3AE;
+  --on-daun: #1C1726;
+  --daun-soft: #1F3A33;
+  --senja: #4A2E36;
+  --shadow-angkat: 0 8px 24px rgba(0,0,0,0.45);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --font-display: "Bricolage Grotesque", Figtree, system-ui, sans-serif;
+  --font-body: Figtree, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-kutipan: "Instrument Serif", Georgia, "Times New Roman", serif;
+}
+.display-xl { font-family: var(--font-display); font-size: 64px; line-height: 64px; font-weight: 700; letter-spacing: -0.02em; }
+.display-l { font-family: var(--font-display); font-size: 44px; line-height: 48px; font-weight: 700; letter-spacing: -0.015em; }
+.heading { font-family: var(--font-display); font-size: 28px; line-height: 34px; font-weight: 700; }
+.subheading { font-family: var(--font-display); font-size: 20px; line-height: 28px; font-weight: 600; }
+.body-l { font-family: var(--font-body); font-size: 18px; line-height: 28px; font-weight: 400; }
+.body { font-family: var(--font-body); font-size: 16px; line-height: 26px; font-weight: 400; }
+.caption { font-family: var(--font-body); font-size: 13px; line-height: 18px; font-weight: 500; }
+.label { font-family: var(--font-body); font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.kutipan { font-family: var(--font-kutipan); font-size: 26px; line-height: 34px; font-weight: 400; font-style: italic; }

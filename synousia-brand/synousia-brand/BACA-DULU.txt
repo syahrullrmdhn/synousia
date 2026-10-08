@@ -1,0 +1,11 @@
+SYNOUSIA — PAKET BRAND
+
+README.md        Panduan brand lengkap: filosofi, tagline, nilai, gaya bahasa, logo, warna, tipografi.
+tokens.json      Data token warna, font, jarak, dan sudut (untuk developer/desain).
+tokens.css       Token yang sama dalam bentuk CSS, siap dipakai di website.
+logo/svg         Logo vektor (untuk cetak dan website).
+logo/png         Logo PNG resolusi tinggi dengan latar transparan (untuk dokumen dan media sosial).
+penerapan        Contoh kartu nama, post media sosial, header website, dan kop surat (HTML + panduan).
+pratinjau        Gambar PNG dari contoh penerapan.
+
+Font (gratis di Google Fonts): Bricolage Grotesque, Figtree, Instrument Serif.

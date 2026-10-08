@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+:root {
+  --background: #f3f4ef;
+  --foreground: #2a2138;
+  --card: #ffffff;
+  --card-foreground: #2a2138;
+  --popover: #ffffff;
+  --popover-foreground: #2a2138;
+  --primary: #f2a93b;
+  --primary-foreground: #2a2138;
+  --secondary: #2f6f5e;
+  --secondary-foreground: #ffffff;
+  --muted: #dcebe4;
+  --muted-foreground: #5e566b;
+  --accent: #f2d6cb;
+  --accent-foreground: #2a2138;
+  --destructive: #b42318;
+  --destructive-foreground: #ffffff;
+  --border: #dad9d0;
+  --input: #dad9d0;
+  --ring: #2f6f5e;
+  --ns-muted: #5e566b;
+  --radius: 0.75rem;
+  color-scheme: light;
+}
+
+.dark {
+  --background: #17131f;
+  --foreground: #f4efe7;
+  --card: #241e30;
+  --card-foreground: #f4efe7;
+  --popover: #241e30;
+  --popover-foreground: #f4efe7;
+  --primary: #f5b24a;
+  --primary-foreground: #2a2138;
+  --secondary: #82cbb5;
+  --secondary-foreground: #17131f;
+  --muted: #203a34;
+  --muted-foreground: #bdb4c8;
+  --accent: #4a2e36;
+  --accent-foreground: #f4efe7;
+  --destructive: #ef6a61;
+  --destructive-foreground: #17131f;
+  --border: #3c334b;
+  --input: #3c334b;
+  --ring: #82cbb5;
+  --ns-muted: #a9a0b5;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ns-muted: var(--ns-muted);
+  --font-display: 'Consolas', 'Courier New', monospace;
+  --font-sans: 'Consolas', 'Courier New', monospace;
+  --font-mono: 'Consolas', 'Courier New', monospace;
+  --font-quote: 'Consolas', 'Courier New', monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-background font-sans text-foreground antialiased;
+  }
+
+  body,
+  main {
+    transition: background-color 300ms ease, color 300ms ease;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
