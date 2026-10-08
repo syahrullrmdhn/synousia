@@ -39,7 +39,7 @@ export default function App() {
         <BrandMark />
         <div className="flex items-center gap-4">
           <span className="hidden text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:block">
-            Ilmu menyala dari kebersamaan
+            Belajar bareng, tanpa sok tahu
           </span>
           <button
             type="button"
@@ -54,10 +54,10 @@ export default function App() {
 
       <section className="relative z-10 mx-auto flex w-full max-w-5xl flex-1 flex-col items-center justify-center py-20 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
-          Lingkaran berikutnya dimulai dalam
+          Ketemu lagi dalam
         </p>
         <h1 className="mt-5 max-w-2xl font-display text-4xl font-bold tracking-[-0.045em] text-balance sm:text-6xl">
-          Duduk bersama, menyala bersama.
+          Ngobrol santai, pulang bawa insight.
         </h1>
 
         <div className="my-16 flex min-h-40 items-center justify-center sm:my-20">
@@ -68,13 +68,13 @@ export default function App() {
         </div>
 
         <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-          Tak ada panggung, hanya lingkaran. Bawa pertanyaan dan apa pun yang sedang kamu pelajari.
+          Gak perlu jago dulu. Bawa rasa penasaran, duduk bareng, terus kita ulik rame-rame.
         </p>
       </section>
 
       <footer className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between border-t border-border py-5 text-xs text-muted-foreground">
         <span>Synousia</span>
-        <span>Komunitas pengetahuan</span>
+        <span>Tempat penasaran ketemu teman</span>
       </footer>
     </main>
   )
